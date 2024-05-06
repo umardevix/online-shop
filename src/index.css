@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+	@apply m-0 p-0 box-border
+}
+html{
+	@apply scroll-smooth
+}
+
+body{
+	font-family: "IBM Plex Sans Arabic", sans-serif;
+	@apply w-full h-screen bg-[#FAFAFA] text-[#000000]
+	
+}
+
+nav > a{
+	@apply flex justify-center items-center gap-1 font-semibold text-gray-500 hover:text-black transition-all ease-in duration-150 sm:text-base md:text-lg
+}
+
+.active{
+	@apply text-black 
+}
+
+.container{
+	@apply w-full px-3 m-auto max-w-[1400px]
+}
+
+.image-slider{
+	transition: translate 400ms ease-in-out;
+	@apply absolute object-cover w-[200px] rotate-[30deg] filter drop-shadow-3xl md:w-[400px] md:bottom-28
+	
+}
+
